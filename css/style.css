@@ -1,0 +1,426 @@
+/* ------- Общие стили -------*/
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url("reset.css");
+@import url("all.min.css");
+
+body {
+	background: linear-gradient(to bottom, #01a6e5, #063e60 60%);
+	font-family: 'Bebas Neue', cursive;
+	width: 100%;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+/* ------- Шапка сайта -------*/
+.header {
+	background: url(../images/snowlake-top.png) no-repeat 40% 38%/7%, url(../images/shine-circles.png) no-repeat 40% 0%/80%, url(../images/sky-stars.png) no-repeat center 47%/50%, url(../images/big-snowlake.png) no-repeat left 51%/15%, url(../images/snowlake-top.png) no-repeat 9% 87%/11%;
+	padding: 75px 0 195px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.organizer {
+	background: linear-gradient(to bottom, rgba(148, 212, 237, .7), transparent 35%, rgba(148, 212, 237, 0.6) 80%);
+    color: #fcfeff;
+    font: 400 2.08rem 'Bebas Neue', cursive;
+	height: 57px;
+	left: -50%;
+    padding: 12px 0 10px;
+	position: relative;
+    -webkit-text-stroke: 1.4px #063e60;
+    text-align: center;
+    width: 30%;
+}
+
+.organizer p {
+	height: inherit;
+	left: 0;
+	position: absolute;
+	top: 18%;
+	width: 100%;
+	z-index: 2;
+}
+
+.organizer_snowlake {
+    background: url(../images/snowlake-top.png) no-repeat 30% center/100%;
+    height: 85px;
+    left: 20%;
+    position: absolute;
+    top: -22%;
+    width: 88px;
+	z-index: 1;
+}
+
+.party {
+	margin-top: 175px;
+}
+
+.party p {
+	font-size: 2.98rem;
+	width: fit-content;
+}
+
+.party_description, .party_date {
+	background: black;
+	color: #fff;
+	display: block;
+	padding: 0 25px 0 40px;
+	width: inherit;
+}
+
+.party_date {
+	font-size: 3.72rem;
+	line-height: 1;
+	margin-top: -12px;
+}
+
+.swirl-top {
+	background: url("../images/swirl-top.png") no-repeat center bottom/83%;
+    bottom: -1.9%;
+    filter: drop-shadow(0px 15px 20px #000);
+    height: 171px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 80%;
+    z-index: 2;
+}
+
+.sparkles {
+    background: url(../images/sparkles.png) no-repeat center/90%;
+    bottom: -43%;
+    height: 481px;
+    left: 50.9%;
+    position: absolute;
+    transform: translateX(-50.9%);
+    width: 500px;
+    z-index: 7;
+}
+
+.snow-tree {
+    background: url(../images/snowdrift.png) no-repeat left bottom/50%, url(../images/tree.png) no-repeat right bottom/50%;
+	bottom: -2%;
+    height: 605px;
+	max-width: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.snowlake-top-top {
+	background: url(../images/snowlake-top.png) no-repeat center center/75%;
+    height: 85px;
+    right: 0%;
+    position: absolute;
+    width: 88px;
+    top: 2%;
+}
+
+.snowlake-top {
+	background: url(../images/snowlake-top.png) no-repeat center center/100%;
+    bottom: 38%;
+    height: 85px;
+    right: 2%;
+    position: absolute;
+	transition: 1s;
+    width: 88px;
+}
+
+/* ------ Новая секция -------- */
+.christmas {
+    background: url(../images/red-lights.png) no-repeat 48% 57%/45%, url(../images/snowlake-top.png) no-repeat 78% 62%/8%, url(../images/texture.png) no-repeat center 54%/100%, linear-gradient(to bottom, #800305, #92171a);
+    background-blend-mode: screen;
+	clip-path: polygon(0% 23%, 19% 23%, 24% 11%, 32% 14%, 34% 13%, 35% 4%, 40% 9%, 44% 12%, 48% 12%, 50% 2%, 52% 12%, 55% 12%, 60% 9%, 64% 4%, 65% 14%, 70% 13%, 74% 12%, 77.5% 15%, 78% 23%, 100% 23%, 100% 16%, 100% 100%, 0% 100%);
+    margin-top: -81px;
+	padding: 70px 0 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.christmas__body {
+	color: #e08026;
+	text-shadow: 1px 1px 3px black;
+	text-transform: uppercase;
+}
+
+.christmas__body span {
+	display: block;
+	margin: 0 auto;
+	width: fit-content;
+	width: -moz-fit-content;
+}
+
+.christmas__body_title {
+	font-size: 5.96rem;
+	position: relative;
+}
+
+.christmas__body_title:before {
+	background: url(../images/snowlake-top.png) no-repeat center/80%;
+    content: "";
+    height: 85px;
+    left: -58px;
+    position: absolute;
+    top: 7px;
+    width: 88px;
+}
+
+.christmas__body_year {
+	color: #fff;
+	font-size: 7.44rem;
+	margin: -37px auto !important;
+	text-shadow: none;
+}
+
+.christmas__body_text {
+	font-size: 4.47rem;
+}
+
+/* ------ Новая секция -------- */
+.footer {
+    background: url("../images/swirl-bottom.png") repeat-x center top/67%, url("../images/yellow-lights.png") no-repeat center 60%/50%, url("../images/texture-bottom.png") no-repeat center 6%/67%, url("../images/texture-bottom-bg.png") no-repeat center 77px/cover, url("../images/snowlake-top.png") no-repeat 18% 0%/8%, url("../images/snowlake-top.png") no-repeat 100% 55%/10%;
+	color: #fff;
+    margin-top: -77px;
+    padding: 135px 40px 33px;
+    position: relative;
+	text-transform: uppercase;
+    z-index: 10;
+}
+
+.footer_body {
+	margin: 0 auto;
+	width: 72%;
+}
+
+.special {
+	align-items: center;
+	display: flex;
+	font-size: 2.23rem;
+	margin: 0 0 14px 7px;
+}
+
+.nick {
+	color: #ffe016;
+	font-size: 2.98rem;
+	margin-left: 32px;
+}
+
+.christin {
+	color: #000;
+	margin-bottom: 2px;
+}
+
+.footer_address {
+	font-size: 1.49rem;
+}
+
+.footer_address li {
+	background: #5c3912;
+	cursor: pointer;
+	box-shadow: 0 0 1px rgb(0, 0, 0, .2);
+	margin: 0 1.5px;
+	padding: 5px 8px 5px;
+}
+
+.footer_address li:hover {
+	background: rgb(0, 0, 0, .5);
+	color: #e2872d;
+}
+
+/* ------- Иконка списка -------*/
+.footer_icon-list {
+	border: 1px solid #fff;
+	cursor: pointer;
+	display: none;
+	height: 30px;
+	margin: 15px auto;
+	position: relative;
+	width: 30px;
+}
+
+.fas, .fa-calculator {
+	left: 28%;
+	position: absolute;
+    top: 26%;
+}
+
+/* ------- Медиазапросы -------*/
+@media (max-width: 800px) {
+	.christmas {
+		background: url(../images/red-lights.png) no-repeat 48% 57%/45%, url(../images/snowlake-top.png) no-repeat 78% 62%/8%, url(../images/texture.png) no-repeat center 54%/cover, linear-gradient(to bottom, #800305, #92171a);
+		padding: 145px 0 41px;
+	}
+	
+	.swirl-top {
+		background-size: 84%;
+	}
+	
+	.sparkles {
+		background: url(../images/sparkles.png) no-repeat 52% 38%/80%;
+		bottom: -45%;
+		left: 50.7%;
+		width: 70%;
+	}
+	
+	.christmas__body {
+		margin-top: -20px;
+	}
+	
+	.christmas__body_title:before {
+		height: 67px;
+		left: -50px;
+		top: 0;
+		width: 67px;
+	}
+	
+	.christmas__body_title, .christmas__body_text {
+		font-size: 4.3rem;
+	}
+	
+	.christmas__body_year {
+		font-size: 5.4rem;
+	}
+		
+	.footer_address {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		text-align: center;
+		width: fit-content;
+		width: -moz-fit-content;
+	}
+	
+	.special {
+		flex-direction: column;
+	}
+	
+	.nick {
+		margin: 0;
+	}
+}
+
+@media (max-width: 660px) {
+	.header {
+		background: url(../images/snowlake-top.png) no-repeat 40% 38%/7%, url(../images/shine-circles.png) no-repeat 40% 0%/100%, url(../images/sky-stars.png) no-repeat center 47%/50%, url(../images/big-snowlake.png) no-repeat left 51%/15%, url(../images/snowlake-top.png) no-repeat 9% 87%/11%;
+	}
+	
+	.swirl-top {
+		background-size: 100%;
+	}
+	
+	.sparkles {
+		bottom: -46%;
+		left: 50.8%;
+		width: 83%;
+	}
+	
+	.christmas {
+		background: url(../images/red-lights.png) no-repeat 48% 57%/45%, url(../images/snowlake-top.png) no-repeat 90% 55%/8%, url(../images/texture.png) no-repeat center 54%/cover, linear-gradient(to bottom, #800305, #92171a);
+		clip-path: polygon(0% 23%, 16% 23%, 22% 13%, 32% 16%, 34% 13%, 35% 6%, 40% 13%, 44% 14%, 48% 12%, 50% 3%, 52% 12%, 55% 14%, 60% 13%, 64% 6%, 65% 14%, 70% 15%, 74% 14%, 79.5% 13%, 82% 23%, 100% 23%, 100% 16%, 100% 100%, 0% 100%);
+	}
+	
+	.organizer {
+		width: 45%;
+	}
+	
+	.snow-tree {
+		background: url(../images/snowdrift.png) no-repeat left bottom/50%, url(../images/tree.png) no-repeat right bottom/60%;
+	}
+	
+	.snowlake-top {
+		height: 60px;
+		width: 60px;
+	}
+	
+	.party p {
+		font-size: 2.55rem;
+	}
+	
+	.party_description, .party_date {
+		padding: 0 15px 0 25px;
+	}
+	
+	.footer {
+		background: url(../images/swirl-bottom.png) no-repeat center top/100%, url(../images/yellow-lights.png) no-repeat center 60%/50%, url(../images/texture-bottom.png) no-repeat center 4%/100%, url(../images/texture-bottom-bg.png) no-repeat center 77px/cover, url(../images/snowlake-top.png) no-repeat 5% 0%/8%, url(../images/snowlake-top.png) no-repeat 100% 35%/10%;
+	}
+}
+
+@media (max-width: 500px) {
+	.header {
+		background: url(../images/snowlake-top.png) no-repeat 40% 38%/7%, url(../images/shine-circles.png) no-repeat left top/130%, url(../images/sky-stars.png) no-repeat center 47%/50%, url(../images/big-snowlake.png) no-repeat left 51%/15%, url(../images/snowlake-top.png) no-repeat 9% 87%/11%;
+		padding: 75px 0 150px;
+	}
+	
+	.organizer {
+		width: 65%;
+	}
+	
+	.sparkles {
+		background: url(../images/sparkles.png) no-repeat 51%/65%;
+		left: 51%;
+		width: 100%;
+	}
+	
+	.snow-tree {
+		display: none;
+	}
+	
+	.snowlake-top {
+		bottom: 8%;
+		right: 12%;
+	}
+	
+	.christmas {
+		margin-top: -16%;
+		padding: 100px 0 41px;
+	}
+	
+	.footer {
+		background: url(../images/swirl-bottom.png) no-repeat center top/100%, url(../images/yellow-lights.png) no-repeat center 60%/50%, url(../images/texture-bottom.png) no-repeat 52% 2%/109%, url(../images/texture-bottom-bg.png) no-repeat center 57px/cover, url(../images/snowlake-top.png) no-repeat 5% 0%/8%, url(../images/snowlake-top.png) no-repeat 100% 35%/10%;
+		padding: 140px 25px 40px;
+	}
+	
+	.footer_body {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.special {
+		order: 1;
+	}
+	
+	.footer_address {
+		display: none;
+		order: 2;
+	}
+	
+	.footer_icon-list {
+		display: block;
+		margin: 0 auto;
+		order: 3;
+	}
+	
+	.nick {
+		font-size: 2.5rem;
+	}
+}
+
+@media (min-width: 501px) {
+	.footer_address {
+		display: flex !important;
+	}
+}
+
+@media (max-width: 400px) {
+	.christmas {
+		margin-top: -17.5%;
+	}
+}
