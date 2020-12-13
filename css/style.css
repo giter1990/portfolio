@@ -1,0 +1,550 @@
+/* ------- Общие стили -------*/
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dynalight&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+/* font-family: "Open Sans", sans-serif; */
+/* font-family: 'Dynalight', cursive; */
+/* font-family: "Open Sans", sans-serif; regular - 400, semi-bold - 600, bold - 700, extra-bold - 800 */
+
+body {
+	color: #a7a7a7;
+	font: 400 1rem "Open Sans", sans-serif;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+p {
+	line-height: 1.8;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* ------- Шапка сайта -------*/
+header {
+	background: url("../images/bycicle.jpg") no-repeat center center/cover;
+	color: #fefeff;
+/*	height: 100vh; */
+}
+
+.header_top {
+	align-items: center;
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0;
+}
+
+.header_logo h3, .footer_logo h3 {
+	font: 400 2rem 'Dynalight', cursive;
+}
+
+.header_logo span, .footer_logo span {
+	color: #1abbd3;
+}
+
+nav {
+	font: 600 1.15rem "Open Sans", sans-serif;
+	text-transform: uppercase;
+}
+
+nav li {
+	padding: 0 30px;
+}
+
+nav a {
+	color: #fefeff;
+	transition: .5s;
+}
+
+nav a:hover, .contacts a:hover {
+	color: #1abbd3;
+}
+
+nav .selected {
+	position: relative;
+}
+
+nav .selected:before {
+	background: #1abbd3;
+	content: "";
+	display: inline-block;
+	height: 2px;
+	left: 5px;
+	position: absolute;
+	top: 50%;
+	width: 13px;
+}
+
+.header_slider {
+	padding: 10% 0 20%;
+	width: 50%;
+}
+
+.header_description {
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.header_description h1 {
+	font: 700 6rem "Open Sans", sans-serif;
+	line-height: 1.1;
+	width: 80%;
+}
+
+.header_description span {
+	display: block;
+	font: 400 2.3rem "Open Sans", sans-serif;
+	margin: 20px 0 50px;
+}
+
+.header_social ul {
+	margin-top: 40px;
+}
+
+.header_social li {
+	margin: 0 35px;
+}
+
+.header_social a {
+	color: transparent;
+	display: inline-block;
+	position: relative;
+}
+
+.header_social a:before {
+	color: transparent;
+	font: normal normal 1.5rem FontAwesome;
+	left: 0;
+	-moz-text-stroke-width: 0.5px;
+	-moz-text-stroke-color: #fff;
+	-o-text-stroke-width: 0.5px;
+	-o-text-stroke-color: #fff;
+    position: absolute;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #fff;
+    top: 10px;
+	transition: .5s;
+}
+
+.header_social a:hover:before {
+	color: #1abbd3;
+	-moz-text-stroke-width: 0;
+	-o-text-stroke-width: 0;
+	-webkit-text-stroke-width: 0;
+}
+
+.header_social li:nth-child(1) a:before {
+    content: "\f09a";
+}
+
+.header_social li:nth-child(2) a:before {
+    content: "\f099";
+}
+
+.header_social li:nth-child(3) a:before {
+    content: "\f17d";
+}
+
+.header_social li:nth-child(4) a:before {
+    content: "\f1b4";
+}
+
+.header_social li:nth-child(5) a:before {
+    content: "\f0e1";
+}
+
+/* ------- Меню сайта -------*/
+nav {
+	
+}
+
+/* ------- Контент сайта -------*/
+section:nth-child(odd) {
+	background: #fafafa;
+}
+
+section:nth-child(even) {
+	background: #fff;
+}
+
+section .wrapper {
+	display: flex;
+	padding: 120px 0;
+}
+
+.heading {
+	flex: 1;
+}
+
+.body {
+	flex: 3;
+}
+
+h2 {
+	font: 700 2.5rem "Open Sans", sans-serif; 
+}
+
+h2, h4 {
+	color: #525666;
+}
+
+.intro_body p {
+	margin-bottom: 10px;
+}
+
+.intro_rating {
+	margin-top: 55px;
+}
+
+.intro_rating_view {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.intro_rating h4 {
+	margin: 20px 0 20px;
+}
+
+.intro_rating h4, .intro_rating p {
+	display: inline-block;
+}
+
+.intro_rating p {
+	font-weight: 600;
+	margin-left: auto;
+}
+
+progress {
+	background-color: #f6f6f6;
+	display: block;
+	height: 5px;
+	width: 100%;
+}
+
+progress::-webkit-progress-bar {
+	background-color: #f6f6f6;
+}
+
+progress::-webkit-progress-value {
+	background-color: #1abbd3;
+	transition: width 1s;
+}
+
+::-webkit-progress-value {
+  transition: width 1s;
+}
+
+progress::-moz-progress-bar {
+	background-color: #f6f6f6;
+}
+
+progress::-moz-progress-value {
+	background-color: #1abbd3;
+}
+
+progress::-o-progress-bar {
+	background-color: #f6f6f6;
+}
+
+progress::-o-progress-value {
+	background-color: #1abbd3;
+}
+
+.skills {
+	background: #fff;
+}
+
+.skills li {
+	background: no-repeat 35px 30px;
+	padding: 90px 30px 35px;
+	position: relative;
+}
+
+.skills li:hover {
+	background-color: #17bed1;
+	color: #fff;
+}
+
+.skills li:before {
+	background: no-repeat;
+	content: "";
+	display: inline-block;
+	height: 31px;
+	left: 35px;
+	position: absolute;
+	top: 35px;
+	width: 27px;
+}
+
+.skills li:hover:before {
+	filter: brightness(10);
+}
+
+.skills li:hover a {
+	color: #fff;
+}
+
+.skills li:nth-child(1):before {
+	background-image: url("../images/html5-css3.png");
+}
+
+.skills li:nth-child(2):before {
+	background-image: url("../images/photoshop.png");
+}
+
+.skills li:nth-child(3):before {
+	background-image: url("../images/front-end.png");
+}
+
+.skills a {
+	color: #535565;
+	font: 700 1.5rem "Open Sans", sans-serif;
+}
+
+.skills li:first-of-type a {
+	text-transform: uppercase;
+}
+
+.skills p {
+	margin-top: 15px;
+}
+
+section:nth-child(3) .body {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+figure {
+	display: inline-block;
+	margin: 0 1.5px;
+}
+
+figure img {
+	max-width: 100%;
+}
+
+.hire {
+	margin-left: 31%;
+}
+
+.contacts {
+	justify-content: space-between;
+}
+
+.contacts h4 {
+	margin-bottom: 17px;
+}
+
+.contacts a {
+	transition: .5s;
+}
+
+/* ------- Подвал -------*/
+footer .wrapper {
+	justify-content: space-between;
+}
+
+.footer_copyright span {
+	font-weight: 700;
+}
+
+section:last-child .wrapper {
+	padding: 40px 20px 30px;
+}	
+
+/* ------- Медиазапросы -------*/
+
+@media (max-width: 1200px) {
+	header .wrapper {
+		padding: 0 20px;
+	}
+	
+	section .wrapper {
+		padding: 80px 20px;
+	}
+	
+	.header_slider {
+		width: 70%;
+	}
+}
+
+@media (max-width: 1043px) {
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 1000px) {
+	nav li {
+		padding: 0 15px;
+	}
+	
+	nav li:first-child {
+		padding-left: 27px;
+	}
+	
+	section .wrapper {
+		flex-direction: column;
+	}
+	
+	.heading {
+		margin: 0 auto;
+	}
+	
+	.body, .heading {
+		flex: auto;
+	}
+	
+	h2, .heading p {
+		text-align: center;
+	}
+	
+	.hire {
+		margin: 0;
+	}
+	
+	.skills {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.skills li {
+		padding: 90px 15px 35px;
+		width: 28%;
+	}
+	
+	.skills li:before {
+		left: 45%;
+	}
+	
+	.skills a {
+		display: block;
+		text-align: center;
+	}
+	
+	.gallery {
+		justify-content: center;
+	}
+	
+	.hire {
+		margin: 7px 0;
+	}
+	
+	.footer_logo, .footer_copyright {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 700px) {
+	p {
+		font-size: 1.25rem;
+	}
+	
+	.header_top {
+		flex-direction: column;
+		justify-content: center;
+		padding: 25px 0;
+	}
+	
+	nav {
+		margin-top: 7px;
+	}
+	
+	.header_slider {
+		padding: 5% 0 10%;
+		width: 100%;
+	}
+	
+	.header_description h1 {
+		font-size: 4.5rem;
+	}
+	
+	.header_description span {
+		font-size: 2rem;
+		margin: 10px 0 40px;
+	}
+	
+	.header_social ul {
+		margin-top: 25px;
+	}
+	
+	.skills li {
+		width: 45%;
+	}
+	
+	.contacts {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.contacts li {
+		margin: 5px 20px;
+	}
+	
+	.contacts h4 {
+		text-align: center;
+	}
+}
+
+@media (max-width: 550px) {
+	nav ul {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	nav li {
+		padding: 2px 15px;
+	}
+	
+	.header_description h1 {
+		font-size: 3.5rem;
+	}
+	
+	.header_description span {
+		font-size: 1.8rem;
+	}
+	
+	.header_social ul {
+		justify-content: center;
+	}
+	
+	.header_social li {
+		margin: 0 30px;
+	}
+	
+	.skills li {
+		width: 90%;
+	}
+	
+	.footer_copyright span:last-of-type {
+		display: block;
+		text-align: center;
+	}
+}
+
+@keyframes bar {
+	from {
+		
+	}
+	
+	to {
+		
+	}
+}
+
+
+
