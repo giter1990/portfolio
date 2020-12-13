@@ -1,0 +1,1201 @@
+/* ------- Общие стили -------*/
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+/* font-family: 'NunitoSans', sans-serif; */ /* regular - 400, bold - 700 */
+/* font-family: 'Montserrat', sans-serif; */ /* medium - 500 semi-bold - 600, bold - 700 */
+/* font-family: 'WorkSans', sans-serif; */ /* regular - 400 */
+/* font-family: "OpenSans", sans-serif; regular - 400, semi-bold - 600, bold - 700, extra-bold - 800 */
+
+body {
+	color: #808080;
+	font: 400 1.14rem 'NunitoSans', sans-serif;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 30px;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+p {
+	line-height: 1.8;
+	letter-spacing: .6px;
+}
+
+header a, .counters ul, .gallery_footer, .blockquote, input[type="submit"], .breakfast_menu ul {
+	font: 500 .86rem 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* ------- Шапка сайта -------*/
+header {
+	background: #e1ebec url("../images/banner.png") no-repeat left center/contain;
+}
+
+/* ------- Меню сайта -------*/
+nav {
+	background: url("../images/triangle.png") no-repeat left center;
+}
+
+header ul {
+	flex-wrap: wrap;
+	margin-left: auto;
+	width: 55%;
+}
+
+header li {
+	padding: 43px 15px;
+}
+
+nav a {
+	color: #000;
+	font-weight: 700;
+	transition: .5s;
+}
+
+nav a:hover {
+	color: #3bcfcb;
+}
+
+.header_description {
+	padding: 130px 0 200px 58%; 
+}
+
+h1 {
+	color: #000;
+	font: 600 2.7rem 'Montserrat', sans-serif;
+	text-transform: capitalize;
+}
+
+h1 span {
+	text-transform: lowercase;
+}
+
+.header_description p {
+	font-size: 18px;
+	margin: 25px 0 35px;
+}
+
+.header_description a, input[type="submit"] {
+	background: #1ecbc6;
+	border: 2px solid #1ecbc6;
+	color: #fff;
+	display: block;
+	letter-spacing: 1.5px;
+	padding: 20px 45px;
+	transition: .5s;
+	width: fit-content;
+	width: -moz-fit-content;
+}
+
+.header_description a:hover, input[type="submit"]:hover {
+	background: transparent;
+	color: #1ecbc6;
+	font-weight: 600;
+}
+
+/* ------- Контент сайта -------*/
+
+.about-us {
+	background: url("../images/signature.png") no-repeat center 80%;
+	margin: 0 auto;
+	padding: 90px 0 185px;
+	width: 70%;
+}
+
+h2, .about-us p, .home_description p, .about .header_description {
+	text-align: center;
+}
+
+.about-us p, .home_description p, .about .header_description p, .about-me p, .breakfast p, .contact_body_data p, .contact_subtitles {
+	margin-top: 25px;
+}
+
+h2 {
+	color: #191919;
+	font: 600 2.14rem 'Montserrat', sans-serif;
+	text-transform: capitalize;
+}
+
+/* ------- Skills -------*/
+
+section:nth-of-type(2) {
+	background: #f9f9f9 url("../images/folder.jpg") no-repeat right center;
+}
+
+.skills {
+	padding: 160px 0;
+	width: 50%;
+}
+
+.skills h2 {
+	text-align: left;
+}
+
+.skills p {
+	padding: 35px 0 17px;
+}
+
+.skills p, h3 {
+	color: #000;
+	font: 700 .86rem 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+.skills span {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+progress {
+	background: #ccc;
+	display: block;
+	height: 3px;
+	width: 100%;
+}
+
+::-webkit-progress-value {
+  transition: width 1s;
+}
+
+progress::-webkit-progress-bar {
+	background: #ccc;
+}
+
+progress::-webkit-progress-value {
+	background: #0cc;
+}
+
+progress::-moz-progress-bar {
+	background: #ccc;
+}
+
+progress::-moz-progress-value {
+	background: #0cc;
+}
+
+progress::-o-progress-bar {
+	background: #ccc;
+}
+
+progress::-o-progress-value {
+	background: #0cc;
+}
+
+.counters {
+	background: #10c9c3;
+}
+
+.counters ul {
+	color: #fff;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 95px 0;
+}
+
+.counters li {
+	padding-left: 70px;
+	position: relative;
+}
+
+.counters li:before {
+	font: normal 500 3.43rem FontAwesome;
+	left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.counters li:nth-child(1):before {
+	content: "\f0b1";
+}
+
+.counters li:nth-child(2):before {
+	content: "\f017";
+	left: 5px;
+}
+
+.counters li:nth-child(3):before {
+	content: "\f006";
+	left: 4px;
+}
+
+.counters li:nth-child(4):before {
+	content: "\f08a";
+}
+
+.counters span {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 1.29rem;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery figure {
+	margin-bottom: -4px;
+}
+
+.gallery img {
+	max-width: 100%;
+}
+
+.gallery a {
+	display: inline-block;
+	position: relative;
+}
+
+.gallery a:hover:before {
+	background: rgba(0, 0, 0, .8) url(../images/eye.png) no-repeat center center;
+	content: " ";
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+.gallery_footer {
+	padding: 40px 0;
+}
+
+.gallery_footer, .scopes, .project, .contact section {
+	background: #f5f5f5;
+}
+
+.gallery_footer a {
+	color: #8e8e8e;
+	display: block;
+	font-weight: 600;
+	margin: 0 auto;
+	transition: .5s;
+	width: fit-content;
+	width: -moz-fit-content;
+}
+
+.gallery_footer a:hover {
+	color: #10c9c3;
+}
+
+.process {
+	padding: 95px 0 100px;
+}
+
+.process p, .project p {
+	margin: 35px auto 55px;
+	text-align: center;
+	width: 50%;
+}
+
+.process video {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.scopes, .project {
+	padding: 90px 0;
+}
+
+.scopes ul {
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.scopes li {
+	background: no-repeat center top;
+	margin: 16px;
+	padding-top: 70px;
+	text-align: center;
+	width: 20%;
+}
+
+.scopes li:nth-of-type(1) {
+	background-image: url("../images/UI-UX_design.png");
+}
+
+.scopes li:nth-of-type(2) {
+	background-image: url("../images/web_development.png");
+}
+
+.scopes li:nth-of-type(3) {
+	background-image: url("../images/app-mobile.png");
+}
+
+.scopes li:nth-of-type(4) {
+	background-image: url("../images/game_design.png");
+}
+
+.scopes li:nth-of-type(5) {
+	background-image: url("../images/seo-marketing.png");
+}
+
+.scopes li:nth-of-type(6) {
+	background-image: url("../images/photography.png");
+}
+
+.scopes li:nth-of-type(7) {
+	background-image: url("../images/graphic_design.png");
+}
+
+.scopes li:nth-of-type(8) {
+	background-image: url("../images/illustrations.png");
+}
+
+.scopes p {
+	margin-top: 10px;
+}
+
+.blockquote {
+	background: #10c9c3;
+	color: #fff;
+	padding: 175px 0 55px;
+	quotes: '“' '”';
+	text-align: center;
+}
+
+blockquote {
+	font-size: 1.9rem;
+	line-height: 1.5;
+}
+
+.blockquote p {
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+.blockquote ul {
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.blockquote li {
+	border-radius: 50%;
+	height: 10px;
+	margin: 0 3px;
+	width: 10px;
+}
+
+.blockquote a {
+	background: #b0e8e6;
+	border-radius: 50%;
+	display: inline-block;
+	height: 6px;
+	width: 6px;
+}
+
+.blockquote a:hover {
+	background: #fff;
+	height: 10px;
+	margin-top: 3.5px;
+	width: 10px;
+}
+
+.labels {
+	margin-bottom: 70px;
+	padding: 60px 0;
+}
+
+.labels ul {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.labels li {
+	position: relative;
+}
+
+.labels li:before {
+	background: no-repeat center center;
+	content: "";
+	height: 70px;
+	margin: 0 -41px;
+	position: absolute;
+}
+
+.labels li:nth-of-type(1):before {
+	background-image: url("../images/handmade_1.png");
+	width: 86px;
+}
+
+.labels li:nth-of-type(2):before {
+	background-image: url("../images/mountain.png");
+	width: 95px;
+}
+
+.labels li:nth-of-type(3):before {
+	background-image: url("../images/collection.png");
+	width: 125px;
+}
+
+.labels li:nth-of-type(4):before {
+	background-image: url("../images/mountainbike.png");
+	left: 17px;
+	width: 95px;
+}
+
+.labels li:nth-of-type(5):before {
+	background-image: url("../images/handmade_2.png");
+	width: 90px;
+}
+
+.project form {
+	margin: 0 auto;
+	width: 70%;
+}
+
+input, textarea {
+	color: #534c42;
+	font: inherit;
+	display: block;
+	margin-bottom: 30px;
+	padding: 15px 20px;
+}
+
+input:focus, textarea:focus {
+	box-shadow: 0 0 4px #adbfc5;
+}
+
+input::placeholder, textarea {
+	color: #787878;
+	font: 400 1.07rem 'NunitoSans', sans-serif;
+	text-transform: capitalize;
+}
+
+input:first-child, input[type="email"] {
+	display: inline-block;
+	width: 47%;
+}
+
+input[type="email"] {
+	margin-left: 5.4%;
+}
+
+input:nth-child(3), textarea {
+	width: 100%;
+}
+
+textarea {
+	height: 170px;
+	resize: none;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	margin: 0 auto;
+	padding: 20px 35px;
+	text-transform: uppercase;
+}
+
+/* ------- Подвал -------*/
+footer  {
+	background: #141414;
+	color: #bcbcbc;
+	font-size: 1.07rem;
+	padding: 100px 0;
+}
+
+footer ul {
+	flex-direction: column;
+}
+
+footer li {
+	margin-bottom: 7px;
+}
+
+footer a:hover {
+	color: #fff;
+}
+
+.footer_contact a:hover, .footer_social a:hover, .contact_subtitles a:hover {
+	color: #1ecbc6;
+}
+
+footer .wrapper {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+}
+
+h4 {
+	color: #fff;
+	font: 500 1.29rem 'Montserrat', sans-serif;
+	margin-bottom: 18px;
+}
+
+.footer_copyright span {
+	display: block;
+	margin-top: -3px;
+}
+
+.footer_contact {
+	margin-left: 5%;
+}
+
+.footer_contact a {
+	display: block;
+	margin-bottom: 7px;
+}
+
+.footer_menu {
+	display: flex;
+}
+
+.footer_menu ul:first-child {
+	margin-right: 50%;
+}
+
+/* ------- Страница Home -------*/
+.selected {
+	color: #1ecbc6;
+}
+
+.page_header {
+	background: none;
+}
+
+.page_header_menu {
+	width: 21%;
+}
+
+.home_description {
+	background: #f6f6f6;
+	padding: 100px 0;
+}
+
+.home .home_gallery {
+	background: none;
+}
+
+.home .gallery a:hover:before {
+	background: rgba(30, 203, 198, .8) url("../images/eye.png") no-repeat center center;
+}
+
+/* ------- Страница About -------*/
+.about section:nth-of-type(1) {
+	background: url("../images/woman.jpg") no-repeat center center/cover;
+}
+
+.about .header_description {
+	padding: 105px 0 110px;
+}
+
+.about .header_description, .about .header_description h1 {
+	color: #fff;
+}
+
+.about .header_description p {
+	margin: 25px 0 0 0;
+}
+
+.about .counters {
+    background: #10c9c3;
+}
+
+.about-me {
+	background: #f5f5f5 url("../images/portrait.jpg") no-repeat left center/contain;
+}
+
+.about-me_body {
+	background: url("../images/signature.png") no-repeat left 75%;
+	margin-left: auto;
+	padding: 130px 0 220px;
+	width: 35%;
+}
+
+.about .about-me h2, .contact_body_data h2 {
+	text-align: left;
+}
+
+.about .project {
+	background: #fff;
+}
+
+.about .project input {
+	display: block;
+	width: fit-content;
+	width: -moz-fit-content;
+}
+
+/* ------- Страница Single -------*/
+.single section {
+	background: #f6f6f6 url("../images/breakfast.jpg") no-repeat right center/contain;
+}
+
+.breakfast {
+	padding: 100px 0;
+	width: 50%;
+}
+
+.breakfast_subtitles {
+	margin-top: 45px;
+}
+
+.breakfast_subtitles p, .contact_subtitles p {
+	margin-top: 4px;
+}
+
+.breakfast_subtitles span, .contact_subtitles span {
+	color: #171717;
+	font-weight: 700;
+}
+
+.breakfast_menu {
+	padding: 40px 0;
+}
+
+.breakfast_menu ul {
+	align-items: center;
+	color: #1d1d1d;
+	font-weight: 700;
+	justify-content: space-between;
+}
+
+.breakfast_menu li {
+	transition: .5s;
+}
+
+.breakfast_menu li:first-of-type {
+	background: url("../images/left-arrow.png") no-repeat left center;
+	padding-left: 20px;
+}
+
+.breakfast_menu li:first-of-type:hover {
+	background-image: url("../images/left-arrow_blue.png");
+}
+
+.breakfast_menu li:nth-of-type(2) {
+	background: url("../images/cube.png") no-repeat center center;
+	height: 16px;
+	width: 16px;
+}
+
+.breakfast_menu li:nth-of-type(2):hover {
+	background-image: url("../images/cube_blue.png");
+}
+
+.breakfast_menu li:last-of-type {
+	background: url("../images/right-arrow.png") no-repeat right center;
+	padding-right: 20px;
+}
+
+.breakfast_menu li:last-of-type:hover {
+	background-image: url("../images/right-arrow_blue.png");
+}
+
+.breakfast_menu li:hover {
+	color: #1ecbc6;
+	cursor: pointer;
+}
+
+/* ------- Страница Contact -------*/
+.contact_body {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 100px 0;
+}
+
+.contact_body_data {
+	flex: 1;
+	margin-right: 7%;
+}
+
+.contact_body form {
+	flex: 2;
+}
+
+.contact_body input:first-child, .contact_body input[type="email"] {
+    width: 46%;
+}
+
+.contact_body input[type="submit"] {
+	margin: 0 auto 0 0;
+}
+
+.contact_body figure {
+	margin-top: 100px;
+}
+
+.contact_body img {
+	max-width: 100%;
+}
+/* ------- Медиазапросы -------*/
+
+@media (max-width: 1300px) {
+	.labels li {
+		margin: 0 55px;
+	}
+}
+
+@media (max-width: 1200px) {
+	header .wrapper {
+		padding: 0 20px;
+	}
+	
+	header ul {
+		width: 60%;
+	}
+	
+	.header_description {
+		padding-left: 46%;
+	}
+	
+	input:first-child, input[type="email"] {
+		width: 46%;
+	}
+	
+	input[type="email"] {
+		margin-left: 6.8%;
+	}
+	
+	.single section {
+		background-size: 55%;
+	}
+	
+	.breakfast {
+		padding: 30px 0;
+	}
+
+@media (max-width: 1160px) {
+	.page_header_menu {
+		width: 27%;
+	}
+}	
+	
+@media (max-width: 1090px) {
+	header ul {
+		width: 65%;
+	}
+}
+
+@media (max-width: 1000px) {
+	header {
+		background-size: cover;
+	}
+	
+	header ul {
+		width: 82%;
+	}
+	
+	header a {
+		font-size: 1rem;
+	}
+	
+	.header_description {
+		padding: 60px 0 130px 34%;
+	}
+	
+	.about-us {
+		padding: 55px 0 155px;
+	}
+	
+	.skills {
+		padding: 100px 0;
+		width: 70%;
+	}
+	
+	.counters ul {
+		justify-content: center;
+		padding: 55px 0;
+	}
+	
+	.counters li {
+		margin: 10px 20px;
+	}
+	
+	.gallery_footer {
+		padding: 25px 0;
+	}
+	
+	.process {
+		padding: 60px 0 75px;
+	}
+	
+	.process p, .project p {
+		margin: 25px auto 40px;
+		width: 70%;
+	}
+	
+	.scopes, .project {
+		padding: 60px 0;
+	}
+	
+	.scopes ul {
+		justify-content: center;
+	}
+	
+	.scopes li {
+		width: 30%;
+	}
+	
+	.blockquote {
+		padding-top: 125px;
+	}
+	
+	.labels li {
+		margin: 0 25px;
+	}
+	
+	footer {
+		padding: 70px 0;
+	}
+	
+	.footer_menu {
+		margin-right: 8%;
+	}
+	
+	.footer_social {
+		margin-left: 1%;
+	}
+	
+	.page_header_menu {
+		width: 33%;
+	}
+	
+	.about-me {
+		background-size: 40%;
+	}
+	
+	.about-me_body {
+		padding: 80px 0 180px;
+		width: 60%;
+	}
+	
+	.single section {
+		background-position: right top;
+		background-size: 47%;
+	}
+	
+	.contact_body_data, .contact_body form {
+		flex: auto;
+	}
+	
+	.contact_body_data {
+		margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 860px) {
+	header ul {
+		width: 90%;
+	}
+	
+	.scopes li {
+		width: 40%;
+	}
+	
+	.footer_contact {
+		margin: 0 3%;
+	}
+	
+	.footer_menu {
+		margin-right: 12%;
+	}
+	
+	.page_header_menu {
+		width: 37%;
+	}
+}
+
+@media (max-width: 797px) {
+	header ul {
+		justify-content: center;
+	}
+	
+	header li {
+		padding: 20px 10px;
+	}
+	
+	.process p, .project p {
+		width: 100%;
+	}
+}
+
+@media (max-width: 760px) {
+	.footer_social {
+		margin: 0 auto 30px;
+	}
+	
+	.footer_social ul {
+		flex-direction: row;
+	}
+	
+	.footer_social li {
+		margin: 0 20px;
+	}
+	
+	.about-me {
+		background: #f5f5f5 url("../images/portrait.jpg") no-repeat center bottom/60%;
+		padding-bottom: 45%;
+	}
+	
+	.about-me_body {
+		background-position: center 80%;
+		width: 100%;
+	}
+	
+	.single section {
+		background: #f6f6f6 url("../images/breakfast.jpg") no-repeat center bottom/70%;
+		padding-bottom: 58%;
+	}
+	
+	.breakfast {
+		width: 100%;
+	}
+}
+
+@media (max-width: 700px) {
+	.header_description {
+		padding: 80px 20px 150px;
+	}
+	
+	h1 {
+		font-size: 2.2rem;
+	}
+	
+	.header_description a, input[type="submit"] {
+		padding: 15px 30px;
+	}
+	
+	.about-us {
+		background-position: center 85%;
+		width: 100%;
+	}
+	
+	h2 {
+		font-size: 1.8rem;
+	}
+	
+	.skills {
+		width: 100%;
+	}
+	
+	.skills p, h3 {
+		font-size: 1.07rem;
+	}
+	
+	.counters li {
+		font-size: 1.07rem;
+	}
+	
+	.scopes li {
+		width: 100%;
+	}
+	
+	.blockquote {
+		padding-top: 80px;
+	}
+	
+	.blockquote p {
+		font-size: 1.07rem;
+	}
+	
+	.blockquote ul {
+		margin-top: 60px;
+	}
+	
+	blockquote {
+		font-size: 1.5rem;
+	}
+	
+	.labels li:before {
+		background-size: 70%;
+	}
+	
+	.labels {
+		padding: 30px 0;
+	}
+	
+	.project form {
+		width: 100%;
+	}
+	
+	input:first-child, input[type="email"] {
+		display: block;
+		width: 100%;
+	}
+	
+	input[type="email"] {
+		margin-left: 0;
+	}
+	
+	input, textarea {
+		margin-bottom: 20px;
+		padding: 12px 15px;
+	}
+	
+	.header_description a, input[type="submit"] {
+		text-align: center;
+		width: 100%;
+	}
+	
+	.contact_body {
+		padding: 70px 0;
+	}
+	
+	.contact_body input:first-child, .contact_body input[type="email"] {
+		width: 100%;
+	}
+	
+	.contact_body figure {
+		margin-top: 70px;
+	}
+}
+
+@media (max-width: 668px) {
+	textarea {
+		resize: vertical;
+	}
+	
+	.footer_menu {
+		margin: 0 12% 30px 0;
+	}
+	
+	.footer_menu ul:first-child {
+		margin-right: 55%;
+	}
+	
+	.footer_menu li {
+		margin-bottom: 10px;
+	}
+	
+	.footer_social {
+		align-self: center;
+	}
+	
+	.footer_social li {
+		margin: 0 15px;
+	}
+	
+	.page_header_menu {
+		width: 45%;
+	}
+}
+
+@media (max-width: 645px) {
+	.counters li {
+		width: 40%;
+	}
+}
+
+@media (max-width: 584px) {
+	.counters li {
+		width: 60%;
+	}
+	
+	.footer_menu {
+		margin: 0 auto 30px;
+	}
+	
+	.page_header_menu {
+		width: 50%;
+	}
+}
+
+@media (min-width: 521px) and (max-width: 584px) {
+	.footer_social {
+		margin-top: -10px;
+	}
+	
+	.footer_social ul {
+		flex-direction: column;
+	}
+	
+	.footer_social li {
+		margin: 5px 15px;
+	}
+}
+
+@media (max-width: 500px) {
+	header li {
+		padding: 10px;
+	}
+	
+	.header_description {
+		padding: 50px 20px 90px;
+	}
+	
+	.header_description a, input[type="submit"] {
+		text-align: center;
+		width: 100%;
+	}
+	
+	.about-us {
+		background-position: center 92%;
+		padding: 30px 0 115px;
+	}
+	
+	.skills {
+		padding: 60px 0;
+	}
+	
+	.skills p {
+		padding: 25px 0 10px;
+	}
+	
+	.counters li {
+		width: 75%;
+	}
+	
+	.gallery_footer {
+		padding: 15px 0;
+	}
+	
+	.process {
+		padding: 35px 0;
+	}
+	
+	.scopes, .project {
+		padding: 35px 0;
+	}
+	
+	.blockquote {
+		padding: 50px 0 25px;
+	}
+	
+	.labels {
+		padding: 10px 0;
+	}
+	
+	.labels li:before {
+		background-size: 50%;
+	}
+	
+	.page_header_menu {
+		width: 57%;
+	}
+}
+
+@media (max-width: 479px) {
+	.footer_menu ul:first-child {
+		margin-right: 35%;
+	}
+	
+	.footer_copyright {
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+@media (max-width: 479px) {
+	.page_header_menu {
+		width: 70%;
+	}
+}
