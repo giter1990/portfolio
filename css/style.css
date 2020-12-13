@@ -1,0 +1,963 @@
+/* ------- Общие стили -------*/
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&display=swap');
+/* font-family: 'Open Sans', sans-serif; regular - 400, semi-bold - 600, bold - 700, extra-bold - 800 */
+
+body {
+	color: #494848;
+	font: 400 16px "Open Sans";
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+h2 {
+	color: #333;
+	font: 700 3rem/1.3 "Open Sans";
+	text-transform: uppercase;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+p {
+	line-height: 1.8;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ------- Шапка сайта -------*/
+header {
+	background: #f6f2f2;
+	padding-top: 29px;
+}
+
+/* ------- Меню сайта -------*/
+nav {
+	background: #313030;
+	font: 700 1rem "Open Sans";
+}
+
+nav ul {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+nav a {
+	color: #e0e0e0;
+	display: inline-block;
+	letter-spacing: 1px;
+	padding: 40px 22px 30px;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	background: #ff3f40;
+}
+
+.header_body {
+	display: flex;
+	justify-content: space-between;
+	padding: 103px 0 111px;
+}
+
+h1 {
+	color: #000;
+	font: 800 4.29rem "Open Sans";
+	margin-top: -18px;
+	text-transform: uppercase;
+}
+
+.description {
+	flex: 1;
+	padding-right: 110px;
+}
+
+.description p {
+	padding: 20px 0 58px;
+}
+
+.description a {
+	background: #ff2d2d;
+	border: 2px solid #ff2d2d;
+	border-radius: 4px;
+	color: #fff;
+	font: 700 1.3rem "Open Sans"; 
+	display: block;
+	padding: 17px 60px;
+	text-transform: capitalize;
+	width: fit-content;
+	width: -moz-fit-content;
+}
+
+.description a:hover {
+	background: #fff;
+	color: #ff2d2d;
+	transition: .5s;
+}
+
+.player {
+	flex: 1;
+}
+
+video {
+	box-shadow: 0 0 20px #c8c4c4;
+	width: 100%;
+}
+
+/* ------- Контент сайта -------*/
+section {
+	
+}
+
+.provide {
+	border-bottom: 2px solid #ececec;
+	display: flex;
+	justify-content: space-between;
+	padding: 107px 0 62px;
+}
+
+.provide_description, .provide_options {
+	flex: 1;
+}
+
+.provide_description {
+	margin-right: 75px;
+}
+
+.provide_description p {
+	color: #000;
+	margin: 50px 0;
+}
+
+.provide_description a {
+	border: 2px solid #f00;
+	border-radius: 4px;
+	color: #ff2d2d;
+	display: block;
+	font: 700 1.3rem "Open Sans";
+	padding: 15px 50px;
+	width: fit-content;
+	width: -moz-fit-content;
+}
+
+.provide_description a:hover {
+	background: #ff2d2d;
+	color: #fff;
+	transition: .5s;
+}
+
+.provide_options {
+	margin-top: -35px;
+}
+
+.provide_options ul {
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.provide_options li {
+	margin: 45px 20px;
+	padding-top: 65px;
+	width: 40%;
+}
+
+.provide_options li:nth-of-type(1) {
+	background: url("../images/management.png") no-repeat left top;
+}
+
+.provide_options li:nth-of-type(2) {
+	background: url("../images/UI-UX-Design.png") no-repeat left top;
+}
+
+.provide_options li:nth-of-type(3) {
+	background: url("../images/logo-branding.png") no-repeat left top;
+}
+
+.provide_options li:nth-of-type(4) {
+	background: url("../images/animation.png") no-repeat left top;
+}
+
+.provide_options h4 {
+	color: #4c4c4c;
+	font: 600 1.7rem "Open Sans";
+	margin-bottom: 15px;
+}
+
+.provide_options p {
+	color: #4c4c4c;
+}
+
+.products {
+	padding: 100px 0 80px;
+}
+
+.products_intro {
+	margin: 0 auto;
+	text-align: center;
+	width: 45%;
+}
+
+.products_intro:after {
+	background: #ff3b3b;
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 0 auto;
+	width: 20%
+}
+
+.products_intro p {
+	margin: 20px 0 25px;
+}
+
+.products_list {
+	margin: 75px 20px 55px;
+}
+
+.products_list ul {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.products_list li {
+	margin: 0 25px;
+	text-transform: uppercase;
+}
+
+.products_list a {
+	color: #4c4c4c;
+	font: 600 1.6rem "Open Sans";
+	transition: .5s;
+}
+
+.products_list a:hover {
+	color: #ff2d2d;
+	transition: .5s;
+}
+
+.products_list .selected {
+	color: #ff2d2d;
+}
+
+.products_foto {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.products_foto img {
+	max-width: 100%;
+}
+
+.products_cart {
+	margin: 0 5px 20px;
+}
+
+.team_intro {
+	padding-bottom: 70px;
+	width: 38%;
+}
+
+.team_intro h2 {
+	margin-left: -15px;
+}
+
+.team_intro p {
+	margin: 30px 0 27px;
+}
+
+.team_intro:after {
+	background: #ff3b3b;
+	content: " ";
+	height: 2px;
+	display: block;
+	width: 23%;
+}
+
+.team_representation {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 105px;
+}
+
+.team_representation img {
+	max-width: 100%;
+}
+
+.team_avatar {
+	flex: 1;
+}
+
+.team_description {
+	display: flex;
+    flex: 3;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+.team_description h3 {
+	color: #333;
+	font: 600 2.14rem "Open Sans";
+	text-transform: uppercase;
+}
+
+.team_description p {
+	margin: 15px 0 25px;
+}
+
+.team_description ul {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.team_description a {
+	color: #333;
+	font: italic 400 1.29rem "Open Sans";
+	transition: .3s;
+}
+
+.team_description a:hover {
+	color: #ff3b3b;
+}
+
+.team_description li {
+	letter-spacing: .5px;
+	margin-right: 25px;
+}
+
+.team_foto {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: auto;
+}
+
+.team_profile {
+	position: relative;
+}
+
+.team_profile:hover:after {
+	background: rgba(0,0,0,.5);
+	bottom: 5px;
+	color: #fff;
+	content: " ";
+	font: 600 1rem "Open Sans";
+	height: 15%;
+	left: 0;
+	padding-top: 4px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.team_profile:nth-child(1):hover:after {
+	content: "Sokina jue";
+}
+
+.team_profile:nth-child(2):hover:after {
+	content: "Mark anthony";
+}
+
+.team_profile:nth-child(3):hover:after {
+	content: "Pitt Boston";
+}
+
+.team_profile:nth-child(4):hover:after {
+	content: "Frank Sinatra";
+}
+
+/* ------- Форма designDelivery -------*/
+.designDelivery {
+	background: #2c2c2c url("../images/panorama.png") no-repeat center center/cover;
+	padding: 140px 0;
+}
+
+.designDelivery h3 {
+	color: #fdfcf8;
+	font: 700 3rem "Open Sans";
+	text-align: center;
+}
+
+.designDelivery p {
+	color: #fbf9f1;
+	padding: 25px 0 60px;
+	text-align: center;
+}
+
+.designDelivery_form form {
+	display: flex;
+	justify-content: center;
+    margin: 0 auto;
+	width: 60%;
+}
+
+.designDelivery_form input[type="e-mail"] {
+	background: #fff;
+	border-radius: 4px;
+	flex: 4;
+	margin-right: 22px;
+	padding: 25px;
+}
+
+.designDelivery_form input[placeholder] {
+	color: #6b6b6b;
+	font: 400 16px "Open Sans";
+}
+
+.designDelivery_form input[placeholder]:focus {
+	box-shadow: 0 0 7px 1px #fff;
+}
+
+.designDelivery_form input[type="submit"] {
+	background: #ff2d2d;
+	border-radius: 4px;
+	color: #fff;
+	flex: 1;
+	font: 700 1.29rem "Open Sans";
+	padding: 25px 55px;
+	text-transform: uppercase;
+	transition: .5s;
+}
+
+.designDelivery_form input[type="submit"]:hover {
+	background: #fff;
+	color: #ff2d2d;
+	cursor: pointer;
+}
+
+/* ------- Форма touch и контакты -------*/
+.touch .touch_representation {
+	margin: 100px 0 110px;
+	position: relative;
+	width: 60%;
+}
+
+.touch_description {
+	padding-bottom: 50px;
+	position: relative;
+}
+
+.touch_descripion p {
+	color: #4c4c4c;
+	padding: 50px 0;
+	position: relative;
+}
+
+.touch_description:after {
+	background: #ff2d2d;
+	bottom: 0;
+	content: " ";
+	display: inline-block;
+	height: 2px;
+	left: 0;
+	position: absolute;
+	width: 18%;
+}
+
+.touch form {
+	margin-top: 75px;
+}
+
+.name-e-mail {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 45px;
+}
+
+.name-e-mail input {
+	width: 46%;
+}
+
+.touch input, .touch textarea {
+	background: #e5e5e5;
+	border-radius: 10px;
+	padding: 25px 50px;
+}
+
+.touch input[placeholder], .touch textarea {
+	color: #444444;
+	font: 400 16px "Open Sans";
+}
+
+.touch input[placeholder]:focus, .touch textarea:focus {
+	box-shadow: 0 0 5px 3px #4c4c4c;
+}
+
+
+.touch textarea, .touch input[type="submit"] {
+	display: block;
+	width: 100%;
+}
+
+.touch input[type="submit"] {
+	background: #ff3b3b;
+	border: 2px solid transparent;
+	color: #fff;
+	cursor: pointer;
+	font: 700 1.29rem "Open Sans";
+	margin-top: 45px;
+	text-transform: uppercase;
+	transition: .5s;
+}
+
+.touch input[type="submit"]:hover {
+	background: #fff;
+	border: 2px solid #ff3b3b;
+	color: #ff3b3b;
+}
+
+.contact {
+	background: #2d2d2d;
+	bottom: 0;
+	color: #d5d5d5;
+	height: 61%;
+	padding: 10% 9%;
+	position: absolute;
+	right: -525px;
+}
+
+.contact h5 {
+	font: 700 1.29rem "Open Sans";
+	margin-bottom: 35px;
+	text-transform: uppercase;
+}
+
+.contact p {
+	font: 400 16px "Open Sans";
+	margin: 25px 0;
+}
+
+.contact a {
+	color: #d5d5d5;
+}
+
+/* ------- Подвал -------*/
+footer {
+	background: #313030;
+}
+
+.footer_body {
+	color: #b8b8b8;
+	display: flex;
+	justify-content: space-between;
+	padding: 45px 0 30px;
+}
+
+.footer_social li {
+	cursor: pointer;
+	margin-left: 18px;
+} 
+
+.footer_social a {
+	display: inline-block;
+	height: 33px;
+	width: 33px;
+	position: relative;
+}
+
+.footer_social a:after {
+	border-radius: 50%;
+	content: " ";
+    height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.footer_social li:nth-of-type(1) a {
+	background: url("../images/twitter.png") no-repeat;
+}
+
+.footer_social li:nth-of-type(1):hover a:after {
+	background: #ff3b3b url("../images/twitter.png") no-repeat;
+	transition: .5s;
+}
+
+.footer_social li:nth-of-type(2) a {
+	background: url("../images/linkedIn.png") no-repeat;
+}
+
+.footer_social li:nth-of-type(2):hover a:after {
+	background: #ff3b3b url("../images/linkedIn.png") no-repeat;
+	transition: .5s;
+}
+
+.footer_social li:nth-of-type(3) a {
+	background: url("../images/google.png") no-repeat;
+}
+
+.footer_social li:nth-of-type(3):hover a:after {
+	background: #ff3b3b url("../images/google.png") no-repeat;
+	transition: .5s;
+}
+
+.footer_social li:nth-of-type(4) a {
+	background: url("../images/facebook.png") no-repeat;
+}
+
+.footer_social li:nth-of-type(4):hover a:after {
+	background: #ff3b3b url("../images/facebook.png") no-repeat;
+	transition: .5s;
+}
+
+/* ------- Медиазапросы -------*/
+@media /* only screen and */ (min-/*device*/-width: 320px) and (max-/*device*/-width: 568px) {
+	header {
+		
+	}
+	nav {
+	
+	}
+	section {
+	
+	}
+	footer {
+		
+	}
+}
+
+@media (max-width: 1300px) {
+	.contact {
+		padding-left: 4%;
+		right: -67%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.wrapper {
+		padding: 0 20px;
+	}
+	
+	.contact {
+		padding-left: 3%;
+		padding-right: 5%;
+		right: -69%;
+		width: 60%;
+	}
+}
+
+@media (max-width: 1008px) {
+	.products_foto {
+		justify-content: center;
+	}
+	
+	.products_cart {
+		margin: 0 10px 20px;
+	}
+}
+
+@media (max-width: 1000px) {
+	nav a {
+		padding: 30px 22px 20px;
+	}
+	
+	.header_body {
+		padding: 75px 0 85px;
+	}
+	
+	h1 {
+		font: 800 3rem "Open Sans";
+	}
+	
+	.description {
+		padding-right: 35px;
+	}
+	
+	.provide {
+		padding: 70px 0 30px;
+	}
+	
+	.provide_description {
+		margin-right: 35px;
+	}
+	
+	.provide_options {
+		flex: 2;
+	}
+	
+	h2 {
+		font: 700 2rem/1.3 "Open Sans";
+	}
+	
+	.provide_options h4 {
+		font: 600 1.3rem "Open Sans";
+	}
+	
+	.products {
+		padding: 70px 0 50px;
+	}
+	
+	.products_intro {
+		width: 55%;
+	}
+	
+	.products_intro:after, .team_intro:after, .touch_description:after {
+		width: 40%;
+	}
+	
+	.products_list {
+		margin: 50px 0 30px;
+	}
+	
+	.products_list li {
+		margin: 3px 25px;
+	}
+	
+	.products_list a {
+		font: 600 1.3rem "Open Sans";
+	}
+	
+	.team_representation {
+		margin-bottom: 70px;
+	}
+	
+	.team_description p {
+		margin: 15px 0 15px;
+	}
+	
+	.team_foto {
+		justify-content: center;
+		margin-top: 10px;
+	}
+	
+	.team_profile {
+		margin: 5px;
+	}
+	
+	.designDelivery {
+		padding: 70px 0;
+	}
+	
+	.designDelivery h3 {
+		font: 700 1.7rem "Open Sans";
+	}
+	
+	.designDelivery p {
+		padding: 10px 0 40px;
+	}
+	
+	.designDelivery_form input[type="e-mail"] {
+		padding: 15px;
+	}
+	
+	.designDelivery_form input[type="submit"] {
+		padding: 15px 45px;
+	}
+	
+	.touch .touch_representation {
+		margin: 60px 0 70px;
+	}
+	
+	.touch_description {
+		margin-top: 15px;
+	}
+	
+	.touch form {
+		margin-top: 50px;
+	}
+	
+	.name-e-mail {
+		margin-bottom: 25px;
+	}
+	
+	.touch input[type="submit"] {
+		margin-top: 25px;
+	}
+	
+	.touch input, .touch textarea {
+		padding: 15px 30px;
+	}
+	
+@media (max-width: 850px) {
+	.team_intro {
+		width: 55%;
+	}
+}
+	
+@media (max-width: 700px) {
+	p {
+		font: 400 1.3rem/1.8 "Open Sans";
+	}
+	
+	nav a {
+		padding: 30px 13px 20px;
+	}
+	
+	.header_body {
+		flex-direction: column;
+	}
+	
+	.description, .player {
+		flex: none;
+	}
+	
+	.description {
+		padding-right: 0;
+	}
+	
+	.description a {
+		margin-bottom: 30px;
+	}
+	
+	.provide {
+		display: block;
+	}
+	
+	.provide_description {
+		margin-right: 0;
+	}
+	
+	.provide_options {
+		margin-top: 0;
+	}
+	
+	.provide_options li {
+		margin: 25px 20px;
+	}
+	
+	.products_intro {
+		width: 100%;
+	}
+	
+	.products_list li {
+		margin: 3px 15px;
+	}
+	
+	.team_description {
+		flex: 2;
+	}
+	
+	.designDelivery_form form {
+		width: 80%;
+	}
+	
+	.designDelivery_form input[type="submit"] {
+		flex: 2;
+	}
+	
+	.touch .touch_representation {
+		width: 100%;
+	}
+	
+	.contact {
+		margin: 40px 0;
+		padding: 30px;
+		position: static;
+		width: 100%;
+	}
+	
+	.footer_body {
+		flex-direction: column;
+		padding: 25px 0 15px;
+	}
+	
+	.footer_social {
+		margin: 10px 0 0 auto;
+	}
+}
+
+@media (max-width: 550px) {
+	nav {
+		padding-top: 20px;
+	}
+	
+	nav a {
+		padding-top: 0;
+	}
+	
+	h1 {
+		font: 800 2.5rem "Open Sans";
+	}
+	
+	.team_intro {
+		padding-bottom: 50px;
+	}
+	
+	.team_avatar, .team_description {
+		flex: none;
+	}
+	
+	.team_description {
+		margin-left: 0;
+	}
+	
+	.team_representation {
+		flex-direction: column;
+	}
+	
+	.designDelivery_form form {
+		flex-direction: column;
+	}
+	
+	.designDelivery_form input[type="e-mail"] {
+		margin: 0 0 15px;
+	}
+	
+	.name-e-mail {
+		flex-direction: column;
+	}
+	
+	.name-e-mail input {
+		width: 100%;
+	}
+	
+	.name-e-mail input[type="text"] {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 450px) {
+	.provide_description a {
+		padding: 10px 0;
+		width: auto;
+	}
+	
+	.provide .provide_options li {
+		background-position: center top;
+		margin: 25px auto;
+		width: 75%;
+	}
+	
+	.provide_description a, h4 {
+		text-align: center;
+	}
+	
+	.description a {
+		text-align: center;
+		width: auto;
+	}
+	
+	.team_intro {
+		width: 100%;
+	}
+	
+	.team_avatar {
+		margin: 0 auto;
+	}
+	
+	.footer_body p {
+		text-align: center;
+	}
+	
+	.footer_social {
+		margin: 10px auto 0 auto;
+	}
+}	
+
+
+
+
+
+
+
+
