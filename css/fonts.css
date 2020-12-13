@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "Segoe_WP_N";
+	src: url("../fonts/SegoeWPN.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Segoe_WP_N";
+	src: url("../fonts/SegoeWPN.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Segoe_WP_Light";
+	src: url("../fonts/ofont.ru_Segoe WP Light.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Segoe_WP_Light";
+	src: url("../fonts/SegoeWP-Light.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Segoe_WP_Bold";
+	src: url("../fonts/ofont.ru_Segoe WP.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Segoe_WP_Bold";
+	src: url("../fonts/SegoeWP-Bold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Segoe_WP_Black";
+	src: url("../fonts/ofont.ru_Segoe WP Black.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Segoe_WP_Black";
+	src: url("../fonts/SegoeWP-Black.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Simplo_Caps_Demo_Regular";
+	src: url("../fonts/Simplo W90 Caps DEMO.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Simplo_Caps_Demo_Regular";
+	src: url("../fonts/Simplo W90 Caps DEMO.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Optima_LT_Medium";
+	src: url("../fonts/LTe53505.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Optima_LT_Medium";
+	src: url("../fonts/OptimaLT-Medium.woff") format("woff");
+}

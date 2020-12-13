@@ -1,0 +1,835 @@
+/* ------- Общие стили -------*/
+@import url("reset.css");
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css?family=Copse&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+/* font-family: 'Copse', serif; */
+/* regular - 400, semi-bold - 600, bold - 700, extra-bold - 800 */
+
+body {
+	color: #848484;
+	font-family: "Segoe_WP_Light";
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 30px;
+}
+
+h2 {
+	
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+/* ------- Шапка сайта -------*/
+header {
+	border-bottom: 1px solid #e5e5e5;
+	color: #323332;
+	font-size: 1.64rem;
+	padding: 30px 0 25px;
+}
+
+header .wrapper {
+	align-items: center;
+}
+
+.logo {
+	color: #313131;
+	font: 400 3.65rem "Trebuchet MS";
+}
+
+.logo span {
+	color: #595959;
+	display: inline-block;
+	margin-right: -14px;
+	padding-right: 30px;
+	position: relative;
+}
+
+.logo span:after {
+	background: #6dd025;
+	bottom: 10px;
+	border-radius: 50%;
+	content: "";
+	height: 30px;
+	position: absolute;
+	right: 3px;
+	width: 30px;
+}
+
+/* ------- Меню сайта -------*/
+#iconNav {
+	background: #345cc1;
+	color: #fff;
+	cursor: pointer;
+	display: none;
+	height: 40px;
+	margin: 0 auto;
+	width: 40px;
+}
+
+#iconNav p {
+	position: relative;
+}
+
+#iconNav p:before {
+	content: "\f039";
+	font: normal normal 2rem FontAwesome;
+	left: 14%;
+	position: absolute;
+	top: 7px;
+}
+
+nav li {
+	margin: 0 35px;
+	padding: 4px 20px 6px;
+}
+
+.selected, nav li:hover {
+	background: #373737;
+	color: #fff;
+}
+
+.selected, .banner_body a {
+	font: 400 1.64rem "Segoe_WP_N";
+}
+
+.block {
+	display: block !important;
+}
+
+/* ------- Контент сайта -------*/
+
+#banner {
+	background: url("../images/ipad.png") no-repeat 70% center;
+}
+
+.banner_body {
+	color: #5d5d5d;
+	font-size: 3.93rem;
+	padding: 18% 0;
+}
+
+.banner_body h1 {
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+
+.banner_body a {
+	background: #373737 url("../images/camcorder.png") no-repeat 12px center;
+	border: 1px solid #373737;
+	color: #fff;
+	display: block;
+	padding: 3px 15px 6px 55px;
+	transition: .5s;
+	width: fit-content;
+}
+
+.banner_body a:hover {
+	background: transparent url("../images/camcorder.png") no-repeat 12px center;
+	color: #373737;
+}
+
+.banner_body span:first-of-type {
+	text-transform: none;
+}
+
+.banner_body span:last-of-type {
+	display: block;
+	font-size: 3.7rem;
+	margin-top: -12px;
+}
+
+/* ------- Реклама -------*/
+#advertising .wrapper {
+	padding: 0;
+}
+
+.advertising_body {
+	display: flex;
+}
+
+.advertising_banner {
+	flex: 2;
+}
+
+.advertising_banner {
+	display: flex;
+	margin-right: 4%;
+	order: 1;
+}	
+
+.advertising_banner figure {
+	background: radial-gradient(#e8e8e8, #a1a1a1);
+	flex: 1;
+}
+
+.advertising_banner_description {
+	flex: 1;
+	padding: 0 2% 2% 2%;
+	position: relative;
+}
+
+.advertising_banner img {
+	display: block;
+	margin: auto;
+	margin-top: 20%;
+}
+
+.advertising_banner_description h2 {
+	font-size: 2.14rem;
+	margin-bottom: 9px;
+}
+
+.advertising_banner_description p {
+	margin-bottom: 27px;
+}
+
+.advertising_banner_leftArrow, .advertising_banner_rightArrow {
+	bottom: 0;
+	cursor: pointer;
+	height: 40px;
+	position: absolute;
+	width: 31px;
+}
+
+.advertising_banner_leftArrow {
+	right: 31px;
+}
+
+.advertising_banner_rightArrow {
+	right: 0;
+}
+
+.advertising_banner_leftArrow:hover, .advertising_banner_rightArrow:hover {
+	background-color: #aeb6ae;
+}
+
+.advertising_banner_leftArrow:active, .advertising_banner_rightArrow:active {
+	background-color: #7c7d7c;
+	background-blend-mode: lighten;
+}
+
+.advertising_banner_leftArrow {
+	background: #989998 url("../images/left-arrow.png") no-repeat center center;
+}
+
+.advertising_banner_rightArrow {
+	background: #989998 url("../images/right-arrow.png") no-repeat center center;
+}
+
+.advertising_link {
+	border: 1px solid #e1dddd;
+	color: #9ba08d;
+	flex: 1;
+	font: 400 1.7rem "Segoe_WP_N";
+	order: 2;
+	padding: 12px;
+	position: relative;
+	text-align: center;
+}
+
+.advertising_link p > span {
+	color: #b8dc58;
+	font: 400 2rem "Segoe_WP_Bold";
+	display: block;
+	font-size: 3rem;
+	margin-top: -8px;
+	text-transform: lowercase;
+}
+
+.title {
+	text-transform: capitalize;
+}
+
+.advertising_link figure {
+	display: inline-block;
+}
+
+.advertising_link .mobileSet, .advertising_link .css {
+	position: absolute;
+}
+
+.advertising_link .mobileSet {
+	bottom: -10%;
+    left: 12%;
+}
+
+.advertising_link .css {
+	bottom: 2%;
+	right: 18%;
+}
+
+#mobileSet {
+	max-width: 80%;
+}
+
+/* ------- Контент -------*/
+#content .wrapper {
+	padding: 10px 0 30px;
+}
+
+.content_body {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 2;
+	justify-content: space-between;
+}
+
+article {
+	margin: 20px 9px;
+    width: 31%;
+}
+
+h3 {
+	font: 400 1.86rem "Segoe_WP_Light"
+}
+
+.article_description {
+	margin: 3px 0 7px;
+}
+
+.article_description p:first-of-type, .article_description p:nth-of-type(2) {
+	display: inline-block;
+}
+
+.article_description p:nth-of-type(2) {
+	margin-left: 12px;
+}
+
+aside {
+	flex: 1;
+	margin-top: 40px;
+}
+
+.aside_join {
+	background: #86e7f0;
+	color: #fff;
+	font: 400 1.5rem "Optima_LT_Medium";
+	padding: 120px 15px 10px;
+	position: relative;
+	text-align: center;
+}
+
+.aside_join_circle {
+	background: #ef809f;
+	border: 5px solid #fff;
+	border-radius: 50%;
+	font: 400 5rem "Segoe_WP_Black";
+	height: 130px;
+	left: 31%;
+	position: absolute;
+	top: -18px;
+	width: 130px;
+}
+
+.aside_join_circle span, .aside_join_title, .aside_join input, h4, .aside_sign input[type="submit"] {
+	text-transform: uppercase;
+}	
+
+.aside_join_circle span {
+	display: block;
+	font: 400 1.5rem "Segoe_WP_N";
+	margin-top: -17px;
+}
+
+.aside_join_title {
+	font: 400 3rem "Simplo_Caps_Demo_Regular";
+}
+
+.aside_join_description {
+	margin: 10px 0 3px;
+}
+
+.aside_join input {
+	background: #58d1dc;
+	color: #fff;
+	font-family: inherit;
+	font-size: 1.5rem;
+	border-radius: 7px;
+	padding: 8px 15px 4px;
+	transition: .5s;
+}
+
+.aside_join input:hover {
+	background: #fff;
+	color: #58d1dc;
+}
+
+.aside_join input:active {
+	box-shadow: 2px 3px 5px green;
+}
+
+.aside_sign {
+	background: #393a39;
+	border-bottom: 7px solid #bb4465;
+	color: #e5e5e5;
+	margin-top: 25px;
+	padding: 15px 30px;
+}
+
+h4 {
+	font-size: 1.93rem;
+	text-align: center;
+}
+
+.aside_sign p {
+	font-size: 1.14rem;
+	margin: 8px 0 15px;
+}
+
+.aside_sign input {
+	color: #5d5d5d;
+	display: block;
+	margin: 0 auto;
+	padding: 5px 7px 3px;
+}
+
+.aside_sign input:focus {
+	box-shadow: 0 0 5px #b8dc58;
+}
+
+.aside_sign input::placeholder {
+	color: #787878;
+}
+
+.aside_sign input:nth-of-type(2) {
+	margin: 10px auto;
+}
+
+.aside_sign input:nth-of-type(2)::placeholder {
+	text-transform: lowercase;
+}
+
+.aside_sign input[type="submit"] {
+	background: #bb4465;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	color: #fff;
+	font: 400 1.44rem "Optima_LT_Medium";
+	padding: 5px 10% 3px;
+	transition: .5s;
+}
+
+.aside_sign input[type="submit"]:hover {
+	box-shadow: 0 0 5px rgba(255, 255, 255, .7);
+}
+
+.aside_sign input[type="submit"]:active {
+	background: #fff;
+	border-color: #bb4465;
+	color: #bb4465;
+}
+
+/* ------- Подвал -------*/
+footer  {
+	background: #393a39;
+	color: #f2f2f2;
+	font-size: 1.14rem;
+	padding: 22px 0 35px;
+}
+
+footer .wrapper {
+	position: relative;
+}
+
+footer p {
+	margin: 0 auto;
+}
+
+.footer_socials {
+	position: absolute;
+	right: 0;
+	top: 12%;
+}
+
+.footer_socials li {
+	background: #fff;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	height: 27px;
+	margin: 0 7px;
+	width: 27px;
+}
+
+.footer_socials li:hover {
+	background: #393a39;
+	border-color: #fff;
+}
+
+.footer_socials li:hover a:before {
+	color: #fff;
+}
+
+.footer_socials a {
+	position: relative;
+}
+
+.footer_socials a:before {
+	color: #393a39;
+	font: normal normal 1.5rem FontAwesome;
+	left: 4px;
+	position: absolute;
+	top: 2px;
+}
+
+.footer_socials li:nth-of-type(1) a:before {
+	content: "\f09a";
+}
+
+.footer_socials li:nth-of-type(2) a:before {
+	content: "\f099";
+}
+
+.footer_socials li:nth-of-type(3) a:before {
+	content: "\f167";
+}
+
+footer span {
+	text-transform: capitalize;
+}
+
+/* ------- Медиазапросы -------*/
+@media (max-width: 1500px) {
+	#banner {
+		background: url(../images/ipad.png) no-repeat 82% center/50%;
+	}
+}
+
+@media (max-width: 1300px) {
+	
+}
+
+@media (max-width: 1200px) {
+	#banner {
+		background-position: 85% 65%;
+	}
+	
+	.banner_body {
+		padding: 3% 0 10%;
+	}
+	
+	.advertising_body {
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.advertising_banner, .advertising_link {
+		flex: auto;
+	}
+	
+	.advertising_banner {
+		margin: 0;
+		order: 2;
+	}
+
+	.advertising_link {
+		order: 1;
+		padding: 35px;
+	}
+
+	#mobileSet {
+		max-width: 50%;
+	}
+	
+	.advertising_link .mobileSet {
+		bottom: 12%;
+	}
+	
+	.advertising_link .css {
+		bottom: 35%;
+	}
+	
+	.advertising_banner img {
+		margin-top: 8%;
+		padding-bottom: 8%;
+	}
+	
+	.content_body {
+		justify-content: center;
+	}
+	
+	article {
+		margin: 20px;
+		width: 40%;
+	}
+	
+	.footer_socials {
+		right: 3%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.aside_join_circle {
+		left: 34%;
+	}
+}
+
+@media (max-width: 1000px) {
+	nav li {
+		margin: 0 15px;
+		padding: 4px 10px 6px;
+	}
+	
+	.banner_body {
+		font-size: 2.5rem;
+	}
+	
+	.banner_body span:last-of-type {
+		font-size: 2rem;
+		margin: 0;
+	}
+	
+	.advertising_banner_description h2 {
+		font-size: 1.8rem;
+	}
+	
+	#content .wrapper {
+		flex-direction: column;
+	}
+	
+	.content_body {
+		order: 2;
+	}
+	
+	aside {
+		display: flex;
+		order: 1;
+	}
+	
+	.aside_sign {
+		margin: 0;
+		padding: 15px 45px 15px 36px;
+	}
+	
+	footer p {
+		margin: 0;
+	}
+}
+
+@media (max-width: 850px) {
+	.advertising_banner {
+		/*
+		flex-direction: column;
+		*/
+	}
+	
+	.advertising_link .mobileSet {
+		left: 6%;
+	}
+	
+	.advertising_link .css {
+		right: 12%;
+	}
+	
+	.content_body p {
+		font-size: 1.2rem;
+	}
+	
+	.aside_join {
+		flex: 3;
+	}
+	
+	.aside_sign {
+		flex: 4;
+	}
+	
+	.aside_join_title {
+		font-size: 2.7rem;
+	}
+}
+
+@media (max-width: 810px) {
+	.advertising_banner img {
+		margin-top: 12%;
+	}
+}
+
+@media (max-width: 750px) {
+	header .wrapper {
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	nav {
+		margin-top: 12px;
+	}
+	
+	#banner {
+		background: none;
+	}
+	
+	#banner .wrapper {
+		display: block;
+	}
+	
+	.banner_body {
+		text-align: center;
+	}
+	
+	.banner_body a {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 746px) {
+	.advertising_banner img {
+		margin-top: 15%;
+	}
+}
+
+@media (max-width: 650px) {
+	.advertising_link .mobileSet {
+		left: 3%;
+	}
+	
+	.content_body p {
+		font-size: 1.5rem;
+	}
+	
+	article {
+		width: 80%;
+	}
+	
+	.aside_join, .aside_sign {
+		flex: 1;
+	}
+	
+	.aside_sign {
+		padding: 15px;
+	}
+}
+
+@media (max-width: 606px) {
+	.advertising_banner img {
+		margin-top: 21%;
+	}
+}
+
+@media (max-width: 550px) {
+	.advertising_banner figure {
+		display: none;
+	}
+	
+	.advertising_banner_description p {
+		margin-bottom: 40px;
+	}
+	
+	.advertising_link .mobileSet {
+		left: -2%;
+	}
+	
+	.advertising_link .css {
+		right: 5%;
+	}
+	
+	aside {
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.aside_join_circle {
+		left: 39%;
+	}
+	
+	.aside_join input, .aside_sign input {
+		width: 100%;
+	}
+}
+
+@media (min-width: 500px) {
+	#iconNav {
+		display: none;
+	}
+	
+	#menuList {
+		display: flex !important;
+	}
+}
+
+@media (max-width: 500px) {
+	header {
+		padding: 15px 0;
+	}
+	
+	#iconNav {
+		display: block;
+	}
+	
+	nav {
+		text-align: center;
+		position: relative;
+	}
+	
+	#menuList {
+		display: none;
+		background: #58d1dc;
+		flex-direction: column;
+		left: -50px;
+		position: absolute;
+		top: 41px;
+	}
+	
+	nav li, .selected {
+		font-size: 2.5rem;
+	}
+	
+	nav li {
+		border-bottom: 2px solid #bb4465;
+		margin: 0;
+		padding: 4px 20px 6px;
+	}
+	
+	nav li:hover {
+		background: #86e7f0;
+		color: #fff;
+		font-family: "Segoe_WP_N";
+		padding: 4px 17px 6px;
+	}
+	
+	nav li:active {
+		box-shadow: 0 0 3px #ef809f;
+	}
+	
+	nav li:last-child {
+		border: none;
+	}
+	
+	.selected {
+		background: transparent;
+	}
+	
+	.banner_body {
+		font-size: 2rem;
+	}
+	
+	.banner_body span:last-of-type {
+		font-size: 1.7rem;
+	}
+	
+	.banner_body a {
+		padding: 3px 53px 6px 55px;
+		width: auto;
+	}
+}
