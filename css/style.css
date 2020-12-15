@@ -273,6 +273,10 @@ ul {
 		margin-top: -20px;
 	}
 	
+	.christmas__body span {
+		line-height: 1.4;
+	}
+	
 	.christmas__body_title:before {
 		height: 67px;
 		left: -50px;
