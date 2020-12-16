@@ -122,7 +122,7 @@ a {
 .header__country {
 	color: #127ea5;
 	display: block;
-	font: 800 3.54rem 'A_BighausTitulBrk-ExtraBold';
+	font: 800 3.54rem/1.1 'A_BighausTitulBrk-ExtraBold';
 	margin-top: -8px;
 	transition: .5s;
 }
@@ -136,8 +136,8 @@ a {
 
 .header__description {
 	color: #ded90e;
-	font: 400 1.79rem 'A-CooperBlackNr-Regular';
-    margin-top: 7px;
+	font: 400 1.79rem/1.16 'A-CooperBlackNr-Regular';
+    margin-top: 5px;
 	text-transform: capitalize;
 }
 
