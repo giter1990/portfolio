@@ -223,7 +223,7 @@ a {
 	border: 3px solid #a7d1e6;
 	border-radius: 7px;
 	color: #299fca;
-	font: 400 1.07rem 'AG-ForeignerRomanMedium-Regular';
+	font: 400 1.07rem/1 'AG-ForeignerRomanMedium-Regular';
 	margin-bottom: 12px;
 }
 
