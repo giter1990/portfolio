@@ -113,7 +113,7 @@ a {
 	background: url(../images/airplane.png) no-repeat 0% 0%/94.5%;
 	height: 289px;
     margin-top: 40px;
-	padding: 110px 118px 69px 276px;
+	padding: 110px 118px 0 276px;
 	position: relative;
 	width: 685.5px;
 	z-index: 1;
