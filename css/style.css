@@ -243,6 +243,7 @@ a {
 .header__select select, .header__select select:focus {
 	appearance: none;
 	-moz-appearance: none;
+	-webkit-appearance: none;
 	background: #fff url("../images/down-arrow.png") no-repeat 100% 50%/20%;
 	cursor: pointer;
 	height: 34px;
