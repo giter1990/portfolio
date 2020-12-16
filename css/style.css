@@ -110,7 +110,7 @@ a {
 }
 
 .header__airplane {
-	background: url("../images/airplane.png") no-repeat;
+	background: url(../images/airplane.png) no-repeat 0% 0%/94.5%;
 	margin-top: 40px;
 	padding: 110px 118px 69px 276px;
 	position: relative;
